@@ -1,0 +1,14 @@
+{
+  "id": "default-v1",
+  "scenario": "Consolidating a service with a skeptical physician leader",
+  "criteria": [
+    {"id": "opens_with_purpose", "name": "Opens with purpose and respect", "weight": 1,
+     "anchors": {"low": "Jumps to the ask or the numbers", "mid": "States purpose but not why it matters to them", "high": "Names purpose and what it means to the other person in one or two sentences"}},
+    {"id": "listens_reflects", "name": "Listens and reflects", "weight": 1,
+     "anchors": {"low": "Interrupts or ignores the concern", "mid": "Acknowledges generally", "high": "Reflects the specific concern in their words, then asks an open question"}},
+    {"id": "holds_line", "name": "Holds the line with compassion", "weight": 1,
+     "anchors": {"low": "Caves or gets defensive", "mid": "Holds but dismisses feelings", "high": "Holds the decision and honors the concern together"}},
+    {"id": "next_step", "name": "Agrees one clear next step", "weight": 1,
+     "anchors": {"low": "No commitment", "mid": "Vague commitment", "high": "Specific action, owner and date, confirmed by the Character"}}
+  ]
+}

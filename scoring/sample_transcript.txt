@@ -1,0 +1,9 @@
+[00:05] Character: I heard the unit may close. We serve patients who have nowhere else to go. Was this decided without us?
+[00:20] Learner: Thanks for coming in. Can you walk me through what happened with the unit staffing last quarter?
+[00:34] Character: That's not what I asked. Was this decided without us?
+[00:45] Learner: Nothing is final, and I should have brought you in sooner. Tell me what you're seeing in the community.
+[01:05] Character: Patients here already travel an hour for specialty care. Another gap means some will simply go without.
+[01:18] Learner: That matters to me. What would we need to protect for those patients if the unit does consolidate?
+[01:40] Character: Guaranteed transport, a nurse navigator, and a clear date you will revisit this.
+[02:02] Learner: I can commit to the navigator and transport plan, and to reviewing the data with you in 90 days. Can we agree on that, and I'll send the written plan by Friday?
+[02:20] Character: Yes. Friday works.
