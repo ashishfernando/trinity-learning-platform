@@ -32,7 +32,7 @@ def model_reply(system, history):
     import anthropic
     client = anthropic.Anthropic()
     msg = client.messages.create(model=os.environ.get("PERSONA_MODEL", "claude-sonnet-5-5"),
-                                 max_tokens=300, temperature=0.7, system=system, messages=history)
+                                 max_tokens=300, system=system, messages=history)
     return "".join(b.text for b in msg.content if b.type == "text").strip()
 
 def stamp(t0):

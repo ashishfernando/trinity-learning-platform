@@ -62,7 +62,7 @@ def call_model(rubric, schema, transcript_text, mock, runs_idx):
     user = ("RUBRIC:\n" + json.dumps(rubric, indent=2) + "\n\nSCENARIO: " + rubric.get("scenario", "") +
             "\n\nOUTPUT JSON SCHEMA:\n" + json.dumps(schema) + "\n\nTRANSCRIPT:\n" + transcript_text)
     msg = client.messages.create(model=os.environ.get("SCORER_MODEL", "claude-sonnet-5-5"),
-                                 max_tokens=3000, temperature=0, system=SYSTEM,
+                                 max_tokens=3000, system=SYSTEM,
                                  messages=[{"role": "user", "content": user}])
     raw = "".join(b.text for b in msg.content if b.type == "text").strip()
     raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
