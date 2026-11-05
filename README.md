@@ -9,3 +9,11 @@ Try:    cd persona && python chat.py --mock          (no key needed)
         python ../scoring/score.py transcript.txt    (score what you just said)
 Spec:   see claude/trinity-learning-platform-spec.md in the General BS project.
 The clickable prototype lives in the published design artifact.
+
+## service/ (session service)
+FastAPI + SQLite. Ties persona chat, scoring and the database together; the avatar plugs in through service/avatar.py.
+  pip install -r requirements.txt
+  cd service && python -m pytest -q                 (5 tests, mock mode, no key)
+  MOCK=1 uvicorn app:app --reload                   (no key)   |   uvicorn app:app   (needs ANTHROPIC_API_KEY)
+Endpoints: POST /sessions, POST /sessions/{id}/turn, POST /sessions/{id}/end (scores, idempotent), GET /sessions/{id}, GET /admin/aggregate (groups under 10 learners hidden).
+TavusAdapter is a stub: fill in after checking current Tavus docs. It refuses to start a replica with no consent record.
